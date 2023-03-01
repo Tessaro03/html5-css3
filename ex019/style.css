@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body{
+    background-color: #faebd7;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1{
+    color: #79430d;   
+}
+
+h1#principal{
+    text-align: center;
+    background-color: #fc861138;
+}
+
+h2{
+    color: #d67b1f;
+    font-size: 1.2em;
+}
+
+.primeiro-exercicio{
+    color: #348a4ecb;
+}
+
+.segundo-exercicio{
+    color: #d1ce0a50;
+}
+
