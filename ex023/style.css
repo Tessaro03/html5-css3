@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
+
 header{
     padding: 30px;
     margin: -8px -8px 0px -8px;
@@ -8,6 +9,8 @@ header{
     text-align: center;
 }
 header > h1{
+    margin-bottom: 5px;
+    font-size: 3.5em;
     font-family: Shantell Sans;
     color: white;
     
@@ -22,28 +25,63 @@ p > a:hover{
 
 header > p{
     color: white;
+    font-size: 1.5em;
+    margin-top: 0px;
 }
 article{
+    font-family: Shantell Sans ;
     padding: 1px 10px;
+    line-height: 2em;
+    
 }
 
 article.fora{
     background-color: white;
+    padding-left: 27px;
 
 }
 article.dentro{
+    text-shadow: 1px 1px 1px black;
     color: white;
     background-color: rgba(0, 0, 0, 0.281);
     position: absolute;
     left: 2%;
-    top: 20%;
+    top: 8%;
 }
-div{
-    height: 300px;
+div#estrada{
+    height: 500px;
     background-size: cover;
 
-    background: url(escrita.jpg) center center no-repeat fixed;
+    background: url(imagens/background001.jpg) center center no-repeat fixed;
 
     position: relative;
     margin: -8px -8px 0px -8px;
+    box-shadow: inset 0px 2px 20px 0px black;
+}
+div#paisagem{
+    height: 500px;
+    background-size: cover;
+
+    background: url(imagens/background002.jpg) center center no-repeat fixed;
+
+    position: relative;
+    margin: -8px -8px 0px -8px;
+    box-shadow: inset 0px 2px 20px 0px black;
+}
+section{
+    font-family: Xilosa;
+    font-size: 1.5em;
+}
+footer{
+    background-color: black;
+    padding: 2px;
+    margin: -2px -8px -12px -8px;
+    
+}
+footer > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin: 8px 0px;
 }
