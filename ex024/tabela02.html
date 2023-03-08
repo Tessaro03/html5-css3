@@ -14,11 +14,11 @@
             border-collapse: collapse;
         }
         thead{
-            background-color: rgb(15, 0, 146);
+            background-color: rgb(0, 0, 0);
             color: white;
         }
         tfoot{
-            background-color: rgba(63, 46, 212, 0.815);
+            background-color: rgba(44, 43, 56, 0.815);
             color: white;
         }
         th, td{
@@ -35,6 +35,15 @@
         #total{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(201, 245, 229, 0.781);
+        }
         
 
     </style>
@@ -44,9 +53,9 @@
         <caption> População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th> Estados</td>
-                <th> UF</td>
-                <th> População</td>
+                <th scope="col"> Estados</td>
+                <th scope="col"> UF</td>
+                <th scope="row" style="width: 150px;"> População</td>
             </tr>
         </thead>
         <tbody>
@@ -90,7 +99,7 @@
         <tfoot>
             <tr>
                 <th> </th>
-                <th id="total"> Total: </th>
+                <th id="total" scope="row"> Total: </th>
                 <td id="populacao_total"><strong> 120.801.267</strong></td>
             </tr>
         </tfoot>
