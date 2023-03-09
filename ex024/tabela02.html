@@ -12,6 +12,12 @@
         }
         table{
             border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
         }
         thead{
             background-color: rgb(0, 0, 0);
@@ -98,11 +104,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th> </th>
-                <th id="total" scope="row"> Total: </th>
+                <th id="total" scope="row" colspan="2"> Total: </th>
                 <td id="populacao_total"><strong> 120.801.267</strong></td>
             </tr>
         </tfoot>
     </table>
+    
 </body>
 </html>
