@@ -5,144 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo_palmeiras.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
     <title>Palmeiras</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #368a6850;
-        }
-        header{
-            background-image: linear-gradient(to top, #3fa87e , #185846);
-            padding: 1px;
-            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.466);
-            color: #ffffff;
-            text-align: center;
-            margin: -8px -8px 0px -8px;
-        }
-        header > h1{
-            text-shadow: 6px 3px 12px rgb(0, 0, 0);
-        }
-
-        header > p{
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: -15px;    
-        }
-        header > a{
-            color: #ffffff;
-            text-decoration: none;
-            
-        }
-        header > a#Titulo:hover{
-            color: #B81C1C;
-        }
-        nav{
-            text-align: left;
-            padding: 1px;
-            margin-left: 8px;
-            margin-bottom: 10px;
-        }
-        nav > a{    
-            font-size: 1.2em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #ffffff;
-            margin-right: 5px;
-            padding: 3px;
-            text-shadow: 6px 3px 12px rgb(0, 0, 0);
-            
-        }
-        nav > a:hover{
-            background-color: #1C6752;
-            border-radius: 50px;
-            padding: 5px;
-            transition-duration: 0.5s;
-        }
-        main{
-            background-color: #ffffff;
-            box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.479);
-            min-width: 320px;
-            max-width: 1000px;
-            margin: -18.6px auto;
-        }
-        img.imagens{
-            width: 100%;
-            text-align: center;
-        }
-        section{ 
-            margin-left: 7px;
-            margin-right: 7px;
-        }
-        section > h1{
-            color: #0b2b22;
-            text-align: center;
-            padding: 10px;
-            margin-bottom: 1px;
-        }
-
-        article > h2{
-        background-image: linear-gradient(to right, #45c79394, #ffffff 90%);
-        margin: 0px -8px 0px -8px;
-        box-shadow: 2px 2px 1px #2aac872a;
-        text-align: left;
-        color: #0b2b22;
-        padding-left: 10px;
-
-        }
-       
-        
-        div.video{
-            text-align: center;
-            background-image: linear-gradient(to top, #3fa87e , #185846);
-            margin-left: -8px;
-            margin-right: -8px;
-            padding-bottom: 59%;
-            position: relative;
-        }
-        div.video > iframe{
-            position: absolute;
-            top: 5%;
-            left: 5%;
-            width: 90%;
-            height: 90%;
-        }
-        ul{
-            background-color: #3fa87e;
-            color: #ffffff;
-            border-radius:0pc 0px 8px 8px;
-            padding-top: 5px;
-            box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.295);;
-        }
-        h3{
-            text-align: center;
-        }
-
-        h4{
-            background-color: #1c755e;
-            color: #ffffff;
-            border-radius: 8px 8px 0px 0px;
-            margin-bottom: -16px;
-            padding: 5px;
-            padding-left: 15    px;
-        }
-
-
-        footer{
-            background-color: #185846;
-            color: #ffffff;
-            text-align: center;
-            padding: 2px;
-            padding-left: 5px;
-            margin: 0px -8px 0px -8px;
-            box-shadow: 0px -1px 3px 0px rgb(0 0 0 / 38%);
-
-        }
-        footer > p{
-            margin: 0px;
-        }
-
-
-    </style>
 </head>
 <body>
     <header>
@@ -196,6 +60,10 @@
                 <hr>
                 <h3> Allianz Parque</h3>
                 <p>Moderno e imponente, o Allianz Parque é a principal arena multiuso da América Latina. Localizada no coração de São Paulo, maior metrópole do continente, no mesmo solo que por mais de 100 anos abrigou o Parque Antarctica e, posteriormente, o Estádio Palestra Italia, a casa do Palmeiras foi reinaugurada em 2014 como um marco do centenário do clube e hoje é um dos grandes orgulhos da torcida alviverde.</p>
+    
+                <div class="video">
+                    <iframe width="560" height="515" src="https://www.youtube.com/embed/a-Kw8DdtjmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 <h4> Descrição:</h4>
                 <ul>
                     <li>Local: São Paulo - SP</li>
@@ -204,8 +72,9 @@
                     <li>Gramado: Sintético</li>
                     <li>Custo: 630 Milhões</li>
                 </ul>
-                <div class="video">
-                    <iframe width="560" height="515" src="https://www.youtube.com/embed/a-Kw8DdtjmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <div id="maps">
+                    <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6152.2309738107115!2d-46.683044126749394!3d-23.527523239183985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57fd1d715d45%3A0x864e5421d6195cb1!2sAllianz%20Parque!5e0!3m2!1spt-BR!2sbr!4v1678464756989!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <p>.</p>
             </article>
