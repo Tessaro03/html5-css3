@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+    background-image:linear-gradient(to left, rgb(94, 0, 1221), rgb(94, 0, 1221));
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-25%);
+
+    height: 370px;
+    width: 240px;
+    background-color: aliceblue;
+
+    margin-top: px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 1px rgb(255, 255, 255);
+}
