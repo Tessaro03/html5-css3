@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Meu Primeiro Formulario</h1>
 
     <div>
         <form autocomplete="off">
-            <p><label for="inome">Nome:</label><br>
-                <input type="text" nome="nome" id="inome"></p>
-            <p><label for="isobrenome">Sobrenome: </label><br>
-                <input type="text" nome="sobrenome" id="isobrenome"></p>
-            <p><input type="submit" value="Enviar"></p>
+            <h1>LOGIN</h1>
+            <p><label for="inome"><strong>EMAIL</strong></label><br>
+                <input type="text" nome="nome" id="inome" required placeholder="Email:" autocomplete="email"></p>
+            <p><label for="ipassword"><strong>SENHA</strong> </label><br>
+                <input type="password" nome="password" id="ipassword" required placeholder="Senha:" autocomplete="current-password"></p>
+            <p><input type="submit" value="ENTRAR" id="botao"></p>
         </form>
     </div>
 </body>

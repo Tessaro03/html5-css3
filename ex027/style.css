@@ -1,6 +1,16 @@
 @charset "UTF-8";
+
+:root{
+    --cor1: #2C0770;
+    --cor2: #440BB0;
+    --cor3: #530DD6;
+    --cor4: #5C0FEF;
+    --cor5: #8241fa;
+}
 body{
-    background-image:linear-gradient(to left, rgb(94, 0, 1221), rgb(94, 0, 1221));
+    background-image:linear-gradient(to right, var(--cor1), var(--cor4), var(--cor5));
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 *{
     margin: 0px;
@@ -18,12 +28,40 @@ form{
     top: 50%;
     transform: translate(-50%,-25%);
 
-    height: 370px;
-    width: 240px;
-    background-color: aliceblue;
+    height: 390px;
+    width: 280px;
+    background-color: rgba(218, 218, 218, 0);
 
-    margin-top: px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 3px 3px 1px rgb(255, 255, 255);
+    box-shadow: 1px 3px 13px 0px rgba(0, 0, 0, 0.63);
+}
+form > h1{
+    text-shadow: -2px 1px 20px rgb(0, 0, 0);
+    padding-top: 35px;
+    padding-bottom: 2px;
+}
+p {
+    text-shadow:  -2px 1px 20px rgb(0, 0, 0);
+    margin: 25px 10px;
+}
+input{
+    background-color: var(--cor5);
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 7px;
+    border: 1px solid var(--cor5);
+    border-radius: 10px;
+    color: white;
+}
+#botao{
+    background-color: var(--cor5);
+    padding: 9px 58px;
+    border-radius: 25px;
+    margin-top: -7px;
+    font-weight: bolder; 
+    
+}
+#botao:hover{
+    box-shadow: 2px 2px 0px 0px var(--cor1);
 }
