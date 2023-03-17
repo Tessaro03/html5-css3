@@ -8,7 +8,7 @@
     --cor5: #8241fa;
 }
 body{
-    background-image:linear-gradient(to right, var(--cor1), var(--cor4), var(--cor5));
+    background-image:linear-gradient(to right, var(--cor1), var(--cor5));
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
