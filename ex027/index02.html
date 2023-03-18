@@ -7,35 +7,63 @@
     <link rel="stylesheet" href="style.css">
     <title>Registra-Se</title>
     <style>
-        fieldset{
+fieldset{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-25%);
-    text-align: center;
-    height: 450px;
-    width: 400px;
-    background-color: rgba(218, 218, 218, 0.089);
 
+    height: 450px;
+    width: 335px;
+    background-color: rgba(218, 218, 218, 0.089);
+   
     font-size: 0.8em;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 0px 45px;
     box-shadow: 0px 8px 12px 0px rgba(50, 2, 128, 0.63);
 }
 input{
+    height: 12px;
+    width: 122px;
     position: relative;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 1em;
-    padding: 10px;
     margin-bottom: 15px;
+    margin-left: 1px;
     margin-right: 10px;
     border: 1px solid var(--cor5);
     border-radius: 10px 20px 10px 20px;
 }
-label{
-    margin-right: 100px;
+.txtesquerda{
+    padding-left: 8px;
+   padding-right: 35%;
 }
+.txtnascimento{
+    padding-left: 8px;
+    padding-right: 20%;
+}
+.txttelefone{
+    padding-left: 5px;
+}
+#enviar{
+    margin-top: 10px;
+    text-align: center;
+}
+.botao2{
+    width: 200px;
+    color: white;
+    background-color: var(--cor5);
+    text-shadow:  3px 2px 2px rgb(0, 0, 0);
+    font-size: large;
+    border-radius: 25px;
+    left: 20%;
+    padding-bottom: 25px;
+}
+p > a{
+    margin-left: 43%;
+}
+
     </style>
 </head>
 <body>
@@ -44,25 +72,25 @@ label{
             <fieldset>
                 <legend> REGISTRA-SE</legend>
                 <p class="quest">
-                    <label for="inome">NOME:</label>
-                    <label for="iemail">EMAIL:</label><br>
+                    <label class="txtesquerda" for="inome">NOME:</label>
+                    <label class="txtdireita" for="iemail">EMAIL:</label><br>
                     <input type="text" name="nome" id="inome" required placeholder="Zezinho">
                     <input type="email" name="email" id="iemail" required placeholder="exemplo@email.com">
                 </p>
                 <p class="quest">
-                    <label for="inasc">NASCIMENTO:</label>
-                    <label for="itel">TELEFONE:</label><br>
-                    <input type="date" name="nasc" id="inasc">
-                    <input type="tel" name="tel" id="itel">
+                    <label class="txtnascimento" for="inasc">NASCIMENTO:</label>
+                    <label class="txttelefone" for="itel">TELEFONE:</label><br>
+                    <input type="date" name="nasc" id="inasc" required>
+                    <input type="tel" name="tel" id="itel" required placeholder="(00) 00000-0000">
 
                 </p>
                 <p class="quest">
-                    <label for="ipassword">SENHA:</label>
-                    <label for="ipassword2">SENHA:</label><br>
+                    <label class="txtesquerda" for="ipassword">SENHA:</label>
+                    <label class="txtdireita" for="ipassword2">SENHA:</label><br>
                     <input type="password" name="password" id="ipassword" required placeholder="********">
-                    <input type="" name="password" id="ipassword2" required placeholder="********">
+                    <input type="password" name="password" id="ipassword2" required placeholder="********">
                 </p>
-                <input type="submit" value="REGISTRA-SE" class="botao" id="enviar">
+                <input type="submit" value="REGISTRA-SE" class="botao2" id="enviar">
                 <p>
                     <a id="login-registro" href="index.html">LOGIN</a>
                 </p>
