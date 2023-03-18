@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 :root{
-    --cor1: #2C0770;
-    --cor2: #440BB0;
-    --cor3: #530DD6;
-    --cor4: #5C0FEF;
-    --cor5: #8241fa;
+    --cor1: #090770;
+    --cor2: #160bb0;
+    --cor3: #0d21d6;
+    --cor4: #0f31ef;
+    --cor5: #6341fa;
 }
 body{
     background-image:linear-gradient(to right, var(--cor1), var(--cor5));
@@ -22,46 +22,50 @@ div{
     width: 100vw;
     height: 70vh;
 }
-form{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-25%);
-
-    height: 390px;
-    width: 280px;
-    background-color: rgba(218, 218, 218, 0);
-
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 1px 3px 13px 0px rgba(0, 0, 0, 0.63);
+legend{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: 4px 3px 0px rgb(0, 0, 0);
+  
 }
-form > h1{
-    text-shadow: -2px 1px 20px rgb(0, 0, 0);
-    padding-top: 35px;
-    padding-bottom: 2px;
-}
-p {
-    text-shadow:  -2px 1px 20px rgb(0, 0, 0);
-    margin: 25px 10px;
+.quest{
+    text-shadow:  3px 2px 2px rgb(0, 0, 0);
+    margin: 15px 10px;
 }
 input{
-    background-color: var(--cor5);
-    padding: 10px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1em;
+    padding: 10px;
     margin-top: 7px;
     border: 1px solid var(--cor5);
-    border-radius: 10px;
+    border-radius: 10px 20px 10px 20px;
+}
+input:hover{
+    box-shadow:0px 8px 12px 0px rgba(50, 2, 128, 0.63);
+}
+#enviar{
+    margin-top: 10px;
+
+}
+.botao{
     color: white;
-}
-#botao{
     background-color: var(--cor5);
-    padding: 9px 58px;
+    text-shadow:  3px 2px 2px rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-top: 1px;
+    margin-bottom: 15px;
+    padding: 10px 60px;
     border-radius: 25px;
-    margin-top: -7px;
-    font-weight: bolder; 
-    
 }
-#botao:hover{
-    box-shadow: 2px 2px 0px 0px var(--cor1);
+#login-registro{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bolder;
+}
+#login-registro:hover{
+    font-size: 1.2em;
 }
