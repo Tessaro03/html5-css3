@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
 body{
-    background-image: url(../imagens/cev-portrait.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(../imagens/cev-landscape.jpg);
 }
