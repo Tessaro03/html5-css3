@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medias.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Texto de Lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente harum atque veniam, iure autem nesciunt blanditiis ipsam ab eius non amet repellendus quae nemo natus porro modi, animi ipsa delectus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consequuntur facere similique alias distinctio. Ratione odit, pariatur aperiam asperiores nihil atque libero harum, tempore omnis magnam voluptatum quas. Beatae, architecto!</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quasi corporis aspernatur eligendi amet maiores voluptatibus maxime corrupti! Quidem nam dolores eveniet obcaecati ab, iste architecto at tempora optio! Placeat.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente harum atque veniam, iure autem nesciunt blanditiis ipsam ab eius non amet repellendus quae nemo natus porro modi, animi ipsa delectus!</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consequuntur facere similique alias distinctio. Ratione odit, pariatur aperiam asperiores nihil atque libero harum, tempore omnis magnam voluptatum quas. Beatae, architecto!</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quasi corporis aspernatur eligendi amet maiores voluptatibus maxime corrupti! Quidem nam dolores eveniet obcaecati ab, iste architecto at tempora optio! Placeat.</p><br>
+        
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
