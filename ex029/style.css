@@ -22,6 +22,7 @@ div{
 }
 
 section{
+    display: block;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -34,7 +35,9 @@ section{
     border-radius: 20px;
 }
 
-#imagem{
+div#imagem{
+    display: block;
+    margin: -1px;
     height: 200px;
     border-radius: 20px 20px 0px 0px;
     background: url(imagens/background.jpg)  center fixed;
@@ -42,15 +45,15 @@ section{
     box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.213);
 }
 
-section > h1{
+section > div > h1{
     text-align: center;
     font-size: 1.5em;
     margin-top: 15px;
-    color: var(--cor5);
+    color: var(--cor4);
     text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.282);
 }
 
-section > p{
+section > div > p#text, p{
     padding: 7px;
     font-size: 0.8em;
 }

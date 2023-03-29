@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px) {
+
+    body{
+        background-image: linear-gradient(to right, black, black);
+    }
+
+    section{
+        width: 600px;
+        height: 400px;
+        
+    }
+    div#imagem{
+        float: left;
+        width: 200px;
+        height: 100%;
+        margin-top: 0px;
+        border-radius: 20px 0px 0px 20px;
+    }
+    div#formulario{
+        float: right;
+        width: 65%;
+    }
+    input{
+        height: 26px;
+        width: 300px;
+        padding-left: 3px;
+    }
+    
+    label{
+        margin-right: -5px;
+        padding: 1.2vh;
+        border: 2px solid var(--cor2);
+    }
+    button{
+       
+        width: 350px;
+    }
+    section > div > p#text {
+        margin-bottom: 30px;
+    }
+
+}
